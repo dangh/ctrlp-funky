@@ -5,7 +5,7 @@
 function! ctrlp#funky#ft#javascript#filters()
   let filters = [
         \ { 'pattern': '\v\S+\s*\=\s*(async)?\s*(\(?\s*\w+\s*\)?|\([^)]*\))\s*\=\>',
-        \   'formatter': ['\v(^\s*(const|let|var)\s*)|(\s*\{.*\ze \t#)', '', 'g'] },
+        \   'formatter': ['\v(^\s*(const|let|var)\s*)|(\s*\{.*\ze \t#)|(\s*\=\>.*)', '', 'g'] },
         \ { 'pattern': '\v\w+(if|for|while|catch|switch)@<!\s*\([^)]*\)\s*\{',
         \   'formatter': ['\v(^\s*)|(\s*\{.*\ze \t#)|(\{.*)', '', 'g'] },
         \ { 'pattern': '\v\s*function\s+\w+\s*\(',
